@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a><li>
+                    <li><a href="#">About</a><li>
+                    <li><a href="#">Services</a><li>
+                    <li><a href="#">Portfolio</a><li>
+                    <li><a href="#">Contact</a><li>
+                </ul>
+            </nav>R
+            <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Amisha Raj</span><br>From Bihar</h1>
+        </div>
+        </div>
+    </div>
+    <!------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about me.jpg">
+                </div>
+                <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a passionate and experienced software developer with a strong foundation in a variety of programming languages and technology domains. My journey in the world of software development has been both rewarding and fulfilling. As a software developer with a versatile skill set, I'm well-equipped to tackle a wide range of software development challenges. I'm enthusiastic about leveraging my expertise to create innovative solutions and contribute to the growth and success of any project or organization I'm a part of. 
+                Feel free to connect with me to discuss potential collaborations, share insights, or explore how I can contribute to your software development needs.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Certificates')">Certificates</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                   <ul>
+                    <li><span>C/C++</span><br>Software Development</li>
+                    <li><span>Web Development</span><br>Front-end Web app Development</li>
+                    <li><span>Problem Solving</span><br>DSA</li>
+                   </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                   <ul>
+                    <li><span>2023</span><br>B.Tech Student</li>
+                    <li><span>2019</span><br>Intermediate</li>
+                    <li><span>2017</span><br>Matriculation</li>
+                   </ul>
+                </div>
+                <div class="tab-contents" id="Certificates">
+                   <ul>
+                    <li><span>C/C++</span><br>Udemy</li>
+                    <li><span>Front-end Web Development</span><br>Simplilearn</li>
+                    <li><span>DSA</span><br>Udemy</li>
+                   </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+    }
+
+</script>
+</body>
+</html>
